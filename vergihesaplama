@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner read = new Scanner(System.in);
+	    int totalIncome = read.nextInt();
+	    int taxPercent = read.nextInt();
+	    
+	    //creating an Income object
+	    Income income =  new Income();
+	    income.totalIncome = totalIncome;
+	    income.taxPercent = taxPercent;
+	    
+	    
+	    income.CalculateNetRevenue(totalIncome, taxPercent);
+	    System.out.println("Net revenue: " + income.getNetRevenue());
+	}
+}
+
+class Income{
+    public int totalIncome;
+    public int taxPercent;
+    //the net revenue is private
+    private int netRevenue;
+    
+    //complete setter method
+    public void CalculateNetRevenue(int totalIncome, int taxPercent){
+        this.netRevenue = this.totalIncome - (this.totalIncome * this.taxPercent)/100;
+    }
+    
+    //complete getter method
+    public int getNetRevenue(){
+        return this.netRevenue;
+    }
+}

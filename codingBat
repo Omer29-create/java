@@ -270,3 +270,12 @@ public int loneSum(int a, int b, int c) {
     sum += c;
   }
   return sum;
+
+*******************************
+
+Given a string, return a string where for every char in the original, there are two chars.
+
+
+doubleChar("The") → "TThhee"
+doubleChar("AAbb") → "AAAAbbbb"
+doubleChar("Hi-There") → "HHii--TThheerree"

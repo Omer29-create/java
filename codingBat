@@ -240,3 +240,11 @@ We want to make a row of bricks that is goal inches long. We have a number of sm
 makeBricks(3, 1, 8) → true
 makeBricks(3, 1, 9) → false
 makeBricks(3, 2, 10) → true
+
+public boolean makeBricks(int small, int big, int goal) {
+  int digit = goal % 10;
+  if(small + 5 * big < goal) return false;
+  if(digit < 5 && small < digit) return false;
+  else if(digit > 5 && digit > small + 5) return false;
+  else return true;
+}

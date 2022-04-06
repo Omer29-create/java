@@ -34,3 +34,5 @@ inside static block
 a = 4
 inside constructor
 a = 11
+Static blocks are called before constructors. Therefore, on object creation of class Test, static block is called. 
+So, static variable a = 4. Then constructor Test() is called which assigns a = 10. Finally, function func() increments its value.

@@ -48,3 +48,53 @@ void th() {
     moveForward();
     turnLeft();
 }
+
+******************************************************************************************************
+
+/*
+F1 = moveForward();
+F2 = turnLeft();
+F3 = turnAround();
+F4 = turnRight();
+F5 = pickBeeper();
+F6 = dropBeeper();
+*/
+
+void mowTheLawn()
+{
+    abc();
+}
+
+void abc() {
+    moveForward();
+    repeat(3) {
+        tekrar();
+    }
+}
+
+void tekrar() {
+    repeat(5) {
+        pickBeeper();
+        moveForward();
+    }
+    li();
+    repeat(5) {
+        pickBeeper();
+        moveForward();
+    }
+    re();
+}
+
+void li() {
+    pickBeeper();
+    turnLeft();
+    moveForward();
+    turnLeft();
+}
+
+void re() {
+    pickBeeper();
+    turnRight();
+    moveForward();
+    turnRight();
+}

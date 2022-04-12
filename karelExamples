@@ -1,0 +1,50 @@
+/*
+F1 = moveForward();
+F2 = turnLeft();
+F3 = turnAround();
+F4 = turnRight();
+F5 = pickBeeper();
+F6 = dropBeeper();
+*/
+
+void fillTheHoles()
+{
+    abc();
+}
+
+void abc() {
+    repeat(4) {
+        moveForward();
+        turnRight();
+        moveForward();
+        turnLeft();
+        turnLeft();
+        moveForward();
+        turnRight();
+        moveForward();
+    }
+    def();
+}
+void def() {
+    gr();
+    moveForward();
+    gr();
+    moveForward();
+    moveForward();
+    gr();
+    turnLeft();
+    th();
+}
+
+void gr() {
+    turnLeft();
+    repeat(7) {
+        moveForward();
+    }
+}
+void th() {
+    moveForward();
+    turnRight();
+    moveForward();
+    turnLeft();
+}

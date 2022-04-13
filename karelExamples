@@ -98,3 +98,59 @@ void re() {
     moveForward();
     turnRight();
 }
+
+************************************************************************************
+
+/*
+F1 = moveForward();
+F2 = turnLeft();
+F3 = turnAround();
+F4 = turnRight();
+F5 = pickBeeper();
+F6 = dropBeeper();
+*/
+
+void removeTheTiles() {
+    next();
+}
+void next() {  
+    repeat(4) {
+        abc();
+        sol();
+        abc(); 
+        sag();
+    }
+    abc();
+    sol();
+    abc();
+    if(onBeeper()) {
+        pickBeeper();
+    }
+    turnAround();
+    
+}
+void abc() {
+    while(frontIsClear()) {
+        if(onBeeper()) {
+            pickBeeper();
+        } else {
+            moveForward();
+        }
+    }
+}
+void sol() {
+    if(onBeeper()) {
+        pickBeeper();
+    }
+    turnLeft();
+    moveForward();
+    turnLeft();
+}
+void sag() {
+    if(onBeeper()) {
+        pickBeeper();
+    }
+    turnRight();
+    moveForward();
+    turnRight();
+}

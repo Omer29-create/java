@@ -154,3 +154,42 @@ void sag() {
     moveForward();
     turnRight();
 }
+
+*************************************************************************************************+
+
+/*
+F1 = moveForward();
+F2 = turnLeft();
+F3 = turnAround();
+F4 = turnRight();
+F5 = pickBeeper();
+F6 = dropBeeper();
+*/
+
+void walkTheLabyrinth() {
+    next();
+}
+void next() {  
+    repeat(100) {
+        sonsuz();
+    }
+    
+}
+void abc() {
+    while(frontIsClear()) {  
+        moveForward();     
+    }
+}
+void sonsuz() {
+    if(frontIsClear()) {
+        moveForward();
+    } else if (!frontIsClear() && !rightIsClear() && !leftIsClear()){
+        pickBeeper();
+    } else if(!frontIsClear() && !leftIsClear()) {
+        turnRight();
+        abc();
+    } else if(!frontIsClear() && !rightIsClear()) {
+        turnLeft();
+        abc();
+    } 
+}

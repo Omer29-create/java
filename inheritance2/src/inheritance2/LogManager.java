@@ -7,7 +7,8 @@ public class LogManager {
 		}else if (logType == 2) {
 			System.out.println("Dosyaya loglandi");
 		}else {
-			System.out.println("Email gönderildi");
+			System.out.println("Email gÃ¶nderildi");
 		}
 	}
 }
+

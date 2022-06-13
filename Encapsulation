@@ -10,7 +10,6 @@ public class Main
 	}
 }
 
-
 class Pupil{
     private int age;
     

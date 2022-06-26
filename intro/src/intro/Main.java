@@ -5,8 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		String internetSubeButonu = "Internet Subesi";
-		
-		
+			
 		double dolarDun = 8.15;
 		double dolarBugun = 8.20;
 		int vade = 36;

@@ -54,6 +54,7 @@ public class Main {
 		for (String kredi : krediler) {
 			System.out.println(kredi);
 		}
+		
 		System.out.println("---------");
 		for (int i = 0; i < krediler.length; i++) {
 			System.out.println(krediler[i]);

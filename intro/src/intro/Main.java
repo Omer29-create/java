@@ -79,5 +79,4 @@ public class Main {
 		sehir2 = "Izmir";
 		System.out.println(sehir1);  //Istanbul
 	}
-
 }

@@ -18,3 +18,5 @@ public class Main {
     myObj.myPublicMethod(); // Call the public method on the object
   }
 }
+
+

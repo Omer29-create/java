@@ -173,7 +173,6 @@ void next() {
     repeat(100) {
         sonsuz();
     }
-    
 }
 void abc() {
     while(frontIsClear()) {  

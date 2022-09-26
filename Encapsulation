@@ -27,7 +27,6 @@ class Pupil{
        }
     }
     
-    
     public int getAge(){
         return age;
     }
